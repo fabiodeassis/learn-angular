@@ -1,0 +1,17 @@
+<div class="search-result" (scroll)="onScroll($event)">
+  <div class="itens-list" *ngIf="filteredHotels && filteredHotels.length > 0">
+    <h2 class="title">Resultado da Busca</h2>
+    <div *ngFor="let hotel of filteredHotels">
+      <app-search-item [item]="hotel"></app-search-item>
+    </div>
+  </div>
+
+  <div class="empty" *ngIf="filteredHotels && filteredHotels.length === 0">
+    Nenhum Resultado de Busca
+  </div>
+
+  <div class="empty" *ngIf="!filteredHotels">
+    Não Houve Busca
+  </div>
+
+</div>

@@ -1,0 +1,26 @@
+.search-result {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.search-result .itens-list {
+    margin: 0 auto;
+    max-width: 600px;
+    padding-top: 30px;
+    width: calc(100% - 20px);
+}
+.search-result .itens-list .title {
+    color: #9a9a9a;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.search-result .empty {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}

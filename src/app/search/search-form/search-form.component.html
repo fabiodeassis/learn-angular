@@ -1,0 +1,10 @@
+<div class="search-form">
+  <form (submit)="onSubmit()" #formSearch>
+    <input placeholder="Busca" class="fld" (keyup)="onKey($event)" autocomplete="off" required maxlength="" type="text" name="search" id="search" [(ngModel)]="search" />
+    <button class="btn" type="submit">OK</button>
+  </form>
+  <ul *ngIf="showPreview && previewList.length > 0 && search.length > 0" class="preview-list">
+    <li *ngFor="let item of previewList | slice: 0 : previewLimit" (click)="itemClick(item.name)" class="preview-item">{{item.name}}</li>
+    <li *ngIf="previewList.length > previewLimit" (click)="increaseLimit()" class="preview-item">...e mais {{previewList.length - previewLimit}}</li>
+  </ul>
+</div>

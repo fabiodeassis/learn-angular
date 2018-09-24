@@ -1,0 +1,41 @@
+.header {
+    background-color: #00f;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+.header .brand {
+    position: relative;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+.header .brand img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.header.toppos {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.header.toppos .brand {
+    margin: 0;
+    width: 100px;
+}
+.header.toppos .search {
+    max-width: calc(100% - 120px);
+}
+
+.header.bottompos {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.header.bottompos .brand {
+    margin: 0 auto 20px;
+    width: 140px;
+}
+

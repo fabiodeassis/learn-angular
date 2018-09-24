@@ -1,0 +1,23 @@
+.main {
+    align-content: stretch;
+    align-items: stretch;
+    background: #eff1ee;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    justify-content: flex-start;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: start;
+    -ms-flex-align: stretch;
+    -ms-flex-line-pack: stretch;
+}
+.header {
+    height: auto
+}
+.content {
+    height: 100%;
+    overflow-y: auto;
+}

@@ -1,0 +1,15 @@
+<div class="search-item">
+    <div class="row">
+        <div class="hotel-brand">
+            <img src="{{hotel.logo}}" alt="{{hotel.name}}" class="logo" />
+            <h3 class="name">{{hotel.name}}</h3>
+        </div>
+        <div class="actions">
+            <a (click)="open = (open) ? false : true">Ver detalhes</a>
+        </div>
+    </div>
+    <div class="row hotel-description" [ngClass]="{open: open}">
+        <p>{{hotel.description}}</p>
+        <button class="btn">Ver Mais</button>
+    </div>
+</div>
